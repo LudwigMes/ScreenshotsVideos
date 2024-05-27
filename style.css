@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: 700;
+  }
+  
+  html, body {
+    background: #000;
+  }
+
+ 
+  .basket{
+    margin-left:80%;
+  }
+
+  i {
+    color: #ffffff;
+  }
+
+  
+ 
+  .shopName{
+    color: white;
+    font-size: 50px;
+    margin-left: 50%;
+    margin-top: 1%;
+ 
+   
+  }
+  
+  .row {
+    width:100%;
+    justify-content: flex-start;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  .product, .product--pink, .product--yellow, .product--green, .product--red, .product--orange, .product--blue {
+    box-shadow: 1px 5px 15px #CCC;
+    width: 15em;
+    height: auto;
+    border-radius: 3px;
+    padding: 2em;
+    margin: 1em;
+    overflow: hidden;
+    position: relative;
+    flex: auto;
+  }
+  .product--blue {
+    background: linear-gradient(-45deg, #92DCE5 50%, rgba(255, 255, 255, 0.5) 50%);
+  }
+  .product--orange {
+    background: linear-gradient(-45deg, #EF6F6C 50%, rgba(255, 255, 255, 0.5) 50%);
+  }
+  .product--red {
+    background: linear-gradient(-45deg, #E84855 50%, rgba(255, 255, 255, 0.5) 50%);
+  }
+  .product--green {
+    background: linear-gradient(-45deg, #70C1B3 50%, rgba(255, 255, 255, 0.5) 50%);
+  }
+  .product--yellow {
+    background: linear-gradient(-45deg, #E8DB7D 50%, rgba(255, 255, 255, 0.5) 50%);
+  }
+  .product--pink {
+    background: linear-gradient(-45deg, #FF386D 50%, rgba(255, 255, 255, 0.5) 50%);
+  }
+  .product img, .product--blue img, .product--orange img, .product--red img, .product--green img, .product--yellow img, .product--pink img {
+    max-width: 100%;
+    height: auto !important;
+    text-align: center;
+  }
+  .product_inner {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+  }
+  .product_inner p {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  .product_inner button {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: #FFF;
+    border-radius: 3px;
+    padding: 1em 3em;
+    margin: 1em 0 0 0;
+    background: none;
+    cursor: pointer;
+    transition: background ease-in 0.25s;
+  }
+  .product_inner button:hover {
+    background: white;
+    color: #2B2D42;
+  }
+  .product_inner button:before {
+    font-family: FontAwesome;
+    content: "";
+    color: #FFF;
+    position: absolute;
+    font-size: 1.5em;
+    margin: 0 -1.5em;
+  }
+  .product_inner button:hover:before {
+    color: #2B2D42;
+  }
+  .product_overlay {
+    background: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(-500px);
+    opacity: 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .product_overlay h2 {
+    color: rgba(43, 45, 66, 0.7);
+    font-size: 1.2em;
+    margin: 1em 0;
+  }
+  .product_overlay i {
+    color: rgba(43, 45, 66, 0.7);
+    font-size: 1.5em;
+  }
+
+  .spacer1{
+    margin-top: 100px;
+  }
+
+  .spacer{
+    margin-top: 100px;
+  }
+
+  @media screen and (max-width: 600px) {
+
+ 
+    .spacer1{
+      margin-top: 50px;
+    }
+  }
+  
+  
+ 
+  /*
+  NAV
+  */
+
+  @media screen and (max-width: 600px) {
+
+
+
+    .basket{
+      margin-left:83%;
+      margin-top: 2%;
+      width:13%;
+    }
+
+    .customNav{
+      margin-top: -1%;
+      width: 30%;
+    }
+  }
+
+  .shopName{
+    width:50%;
+    margin-left: 2px;
+    font-size: 30px;
+  }
+
+  .customNav{
+    margin-top: -1%;
+    
+  }
+
+
+  ul { 
+    height: 50px;
+    margin-top: 100px;
+    margin-left: 30%;
+    padding: 0; 
+    list-style: none; 
+    display: table;
+  
+    text-align: center;
+  }
+
+  li { 
+    display: table-cell; 
+    position: relative; 
+    padding: 15px 0;
+    float: left;
+   
+  }
+
+ 
+   
+  
+  a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;     
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+
+a:after {    
+background: none repeat scroll 0 0 transparent;
+bottom: 0;
+content: "";
+display: block;
+height: 4px;
+left: 50%;
+position: absolute;
+background: #fff;
+transition: width 0.3s ease 0s, left 0.3s ease 0s;
+width: 0;
+}
+
+a:hover:after { 
+width: 100%; 
+left: 0;
+background-color:#00fffc;
+}
+
+  @media screen and 
+  (max-height: 300px) {
+      ul {
+          margin-top: 40px;
+      }
+  }
+
+
+  /*
+Share Button
+  */
+
+
+
+
+  .shareWrapper{
+    margin-left: 80%;
+    margin-top:80px;
+  }
+
+  .share-btn {
+    position: absolute;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid rgba(128, 128, 128, 0.705);
+    border-radius: 50%;
+    transition: .2s ease-in-out;
+    scale: .8;
+    padding: 10px;
+    width:60px;
+    height: 60px;
+    z-index: 10;
+  }
+  
+  .share-btn:hover {
+    background: #f1f1f1;
+    scale: .9;
+  }
+  
+  .up {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    margin-left: 15%;
+  }
+  
+  .down {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    margin-left: 15%;
+  }
+  
+  .card1 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 90px 5px 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 300ms cubic-bezier(0.73, -0.18, 0.02, 1.46);
+  }
+  
+  .card1[data-toggle1="false"] {
+    transform: translateY(50px)
+     translateX(60px) scale(0);
+  }
+  .card2[data-toggle2="false"] {
+    transform: translateY(50px) translateX(-60px) scale(0);
+  }
+  
+  .card3[data-toggle3="false"] {
+    transform: translateY(-50px) translateX(60px) scale(0);
+  }
+  
+  .card4[data-toggle4="false"] {
+    transform: translateY(-50px) translateX(-60px) scale(0);
+  }
+  
+  .instagram {
+    margin-top: 1.5em;
+    margin-left: 1.2em;
+    fill: #cc39a4;
+  }
+  
+  .card2 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 90px 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 300ms cubic-bezier(0.76, -0.19, 0.15, 1.17);
+  
+  }
+  
+  .twitter {
+    margin-top: 1.5em;
+    margin-left: -.9em;
+    fill: #03A9F4;
+  }
+  .card3 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 
+    5px 5px 5px 90px;
+    box-shadow: 
+    rgba(50, 50, 93, 0.25) 
+    0px 2px 5px -1px, 
+    rgba(0, 0, 0, 0.3) 
+    0px 1px 3px -1px;
+    transition: 300ms 
+    cubic-bezier(0.72, 
+    -0.26, 0.02, 1.46);
+  }
+  
+  .github {
+    margin-top: -.6em;
+    margin-left: 1.2em;
+  }
+  
+  .card4 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 5px 90px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 300ms cubic-bezier(1, -0.31, 0.02, 1.46);
+  
+  }
+  
+  .discord {
+    margin-top: -.9em;
+    margin-left: -1.2em;
+    fill: #8c9eff;
+  }
+  
+  .card1:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #cc39a4;
+  }
+  
+  .card1:hover .instagram {
+    fill: white;
+  }
+  
+  .card2:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #03A9F4;
+  }
+  
+  .card2:hover .twitter {
+    fill: white;
+  }
+  
+  .card3:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: rgb(39, 39, 39);
+  }
+  
+  .card3:hover .github {
+    fill: white;
+  }
+  
+  .card4:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #8c9eff;
+  }
+  
+  .card4:hover .discord {
+    fill: white;
+  }
+
+  @media screen and (max-width: 600px) {
+
+    
+    
+    .shareWrapper{
+        margin-left:10%;
+      }
+  }
